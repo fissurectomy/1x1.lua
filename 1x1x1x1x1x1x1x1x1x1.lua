@@ -1,6 +1,6 @@
 local ODNEONXORMSKXEMSKXNKEMSKXOEMSMXMKDKEME
 
-
+print("wh")
 
 local print
 local warn
@@ -64,6 +64,7 @@ local rconsolecreate
 local get_script_function
 local getcallingscript
 local queueonteleport
+
 local consolecreate
 local logprint
 local isfile
@@ -202,3 +203,5 @@ local rconsoleerr
 local getallthreads
 local newcclosure
 local setscriptable
+
+print("uh")
