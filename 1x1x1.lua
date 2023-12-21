@@ -17,4 +17,4 @@ if identifyexecutor then if executorname == "Delta" or "Codex" or "Hydrogen" the
 
 queue('loadstring(game:HttpGet("https://raw.githubusercontent.com/fissurectomy/1x1.lua/main/obf_rJ8UD0i3dqgRzml4SDBqvQzRQZZbTC10yPenw69wMNRha17TH23tV5tiyr9Gz9XO.lua.txt"))()')
 task.wait(0.2)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fissurectomy/1x1.lua/main/obf_rJ8UD0i3dqgRzml4SDBqvQzRQZZbTC10yPenw69wMNRha17TH23tV5tiyr9Gz9XO.lua.txt"))(
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fissurectomy/1x1.lua/main/obf_rJ8UD0i3dqgRzml4SDBqvQzRQZZbTC10yPenw69wMNRha17TH23tV5tiyr9Gz9XO.lua.txt"))()
