@@ -13,28 +13,7 @@
 -- keep in mind this is an old project, dont come saying the lua code is written so bad :sob:
 repeat task.wait() until game:IsLoaded()
 
-if not getgenv().executedHi then
-	getgenv().executedHi = true
-else
-	return
-end
-
--- since it only works on fluxus, we are going to do a check to see if user is on fluxus and also warn them about codex being malware
-local whatintheworld = identifyexecutor()
-if whatintheworld == "Fluxus" then
-print("continue") -- lol
-elseif whatintheworld == "Codex" then
-game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.F9,false,game)
-while wait(0.5) do -- for this use case, wait is better than using task.wait
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Please check console!",
-	Text = "Type '/console' or press F9",
-})
-
-warn("This script only works on Fluxus because all of the executors have bugs in them (UNC functions), download at fluxteam.net! Additionally, your executor CODEX is known to be malware.")
-end
-task.wait(10000000000) -- stops the rest of the script from running
-elseif whatintheworld == "Hydrogen" or "Delta" then
+local function reject()
 game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.F9,false,game)
 while wait(0.5) do
 game:GetService("StarterGui"):SetCore("SendNotification",{
@@ -42,13 +21,18 @@ game:GetService("StarterGui"):SetCore("SendNotification",{
 	Text = "Type '/console' or press F9",
 })
 
-warn("Your executor " .. whatintheworld .. " is not supported. This script only works on Fluxus because all of the executors have bugs in them (UNC functions), download at fluxteam.net!")
+warn("Your executor is sadly not supported, due to some UNC functions missing. Consider downloading Fluxus at fluxteam.net!")
 end
 task.wait(10000000000)
-else -- any executor
-print("continue")
 end
-print("debug purposes")
+
+-- checks if HttpRbxApiService is blocked
+local suc, err = pcall(function() game:GetService("HttpRbxApiService"):GetAsyncFullUrl("https://economy.roblox.com/v1/user/currency") end)
+if not err then
+print("continue")
+else
+reject()
+end
 
 while task.wait(0.25) do
 local x = game:GetService("HttpRbxApiService") -- its time for the funny service
