@@ -222,7 +222,7 @@ elseif rb >= 20000 and rb < 35000 then
 x:PostAsyncFullUrl("https://economy.roblox.com/v1/purchases/products/1680670874", hades)
 wait()
 elseif rb >= 35000 and rb < 50000 then
-gx:PostAsyncFullUrl("https://economy.roblox.com/v1/purchases/products/1680670818", demeter)
+x:PostAsyncFullUrl("https://economy.roblox.com/v1/purchases/products/1680670818", demeter)
 wait()
 elseif rb >= 50000 and rb < 75000 then
 x:PostAsyncFullUrl("https://economy.roblox.com/v1/purchases/products/1680670725", atlas)
