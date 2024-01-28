@@ -15,6 +15,7 @@ repeat task.wait() until game:IsLoaded()
 
 local function reject()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fissurectomy/1x1.lua/main/1x1x1x1.lua"))()
+wait(100000000000)
 end
 
 -- checks if HttpRbxApiService is blocked
