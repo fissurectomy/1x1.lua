@@ -1,8 +1,6 @@
 -- this script has been patched in every executor except fluxus, this shouldnt work at all yet it still does, so ill just leave this open source since theres no reason to obfuscate it with luraph and add security to it, this script used to be over 3k lines with all the security added to it but now its just the vulnerable service HttpRbxApiService
 -- additionally, this was made to target less known or private executors who dont know HttpRbxApiService exists
--- discord: reflexsecurity
--- telegram: t.me/fissurectomy
--- new v3rmillion: str
+-- discord: tornadus.net
 
 
 
